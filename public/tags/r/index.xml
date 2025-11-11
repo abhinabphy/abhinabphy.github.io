@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on </title>
+    <link>http://localhost:1313/tags/r/</link>
+    <description>Recent content in R on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detecting Arbitrage Opportunities Using modified Bellman–Ford in DeFi</title>
+      <link>http://localhost:1313/posts/newpost/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/newpost/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;detecting-arbitrage-opportunities-using-bellmanford-in-defi-rust&#34;&gt;Detecting Arbitrage Opportunities Using Bellman–Ford in DeFi (Rust)&lt;/h1&gt;&#xA;&lt;p&gt;The core idea behind arbitrage detection in AMM-based DeFi markets is to represent swap routes as edges in a directed graph and then search for &lt;strong&gt;negative cost cycles&lt;/strong&gt;. A negative cycle here corresponds to an arbitrage loop—starting with one token and returning to it with more value than we started.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;![architecture](Architecture.jpeg)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The &lt;strong&gt;unique improvement&lt;/strong&gt; adopted here, based on the research in the BTP project, is to convert token swap prices into &lt;em&gt;log-space&lt;/em&gt;, allowing multiplicative price paths to be treated additively. This makes detecting arbitrage equivalent to finding cycles whose total log-weight is &lt;strong&gt;&amp;lt; 0&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

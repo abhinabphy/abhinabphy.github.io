@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audits &amp; Web3  on </title>
+    <link>http://localhost:1313/series/audits--web3-/</link>
+    <description>Recent content in Audits &amp; Web3  on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/series/audits--web3-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Malicious Adapter Exploit </title>
+      <link>http://localhost:1313/posts/hello/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hello/</guid>
+      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;&#xA;&lt;p&gt;By passing a malicious adapter through Router.swap(), a compromised admin can exploit the delegatecall in Executor to overwrite critical storage—specifically the owner slot. This results in full control over adapter configuration and swap flow, allowing the attacker to blacklist all adapters, freeze swaps, and cause a complete service-level denial-of-service of the protocol.&lt;/p&gt;&#xA;&lt;h3 id=&#34;root-cause&#34;&gt;Root Cause&lt;/h3&gt;&#xA;&lt;p&gt;The root cause of this vulnerability lies in the insecure use of delegatecall within the Executor contract. The system is designed to route swaps through external adapter contracts using delegatecall in &lt;a href=&#34;https://github.com/sherlock-audit/2025-07-debank/blob/71400519400e462f92f4b7104a73fa1d8f599321/swap-router-v1/src/executor/Executor.sol#L76-L81&#34; target=&#34;_blank&#34;&gt;Executor.sol#L76-L81&lt;/a&gt; , which runs the adapter’s logic within the storage context of the Executor itself.&#xA;This approach exposes critical internal storage — such as the owner variable stored at slot 0 (due to inheritance from OpenZeppelin’s Ownable) — to manipulation. If an attacker can deploy a malicious adapter and convince an admin to whitelist it, they can overwrite storage via crafted delegatecall payloads during a normal swap. This results in full ownership takeover, the ability to modify or wipe out the adapter whitelist, and ultimately a denial-of-service attack that halts all protocol swaps. The core issue is the absence of sandboxing or memory isolation between trusted core logic and externally registered adapter code.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
