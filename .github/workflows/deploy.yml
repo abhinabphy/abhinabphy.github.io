@@ -13,36 +13,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
 
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
 
-      - name: Build Site
+      - name: Build site
         run: hugo --minify
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: hugo-site
           path: ./public
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: hugo-site
-          path: ./public
-
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
