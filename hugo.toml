@@ -16,8 +16,8 @@ home = ["HTML", "RSS"]
 
 [params]
     brand = "Abhinab Das"                      # name of your site - appears in the sidebar
-    remote_brand_image = "https://commondatastorage.googleapis.com/codeskulptor-assets/week8-dart.png"  # path to the image shown in the sidebar
-    description = "hehe..." # Used as default meta description if not specified in front matter
+    remote_brand_image = "https://i.postimg.cc/3xhTcx4K/Screenshot-2025-07-14-at-1-00-21-PM.jpg"  # path to the image shown in the sidebar
+    description = "Web3 Security Researcher |  3x Hackathon Winner | Studying at IIT Guwahati | Passionate about DeFi, audits & protocol exploits" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
@@ -34,18 +34,18 @@ home = ["HTML", "RSS"]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
     discord_url = "https://discord.com"
-    email_url = "mailto://user@domain"
+    email_url = "mailto://abhinabiitg@gmail.com"
     # facebook_url = "https://facebook.com"
     # flickr_url = "https://flickr.com"
-    github_url = "https://github.com"
+    github_url = "https://github.com/abhinabphy"
     # gitlab_url = "https://gitlab.com"
    # instagram_url = "https://instagram.com"
-    linkedin_url = "https://linkedin.com"
+    linkedin_url = "https://linkedin.com/in/abhinabdasiitg"
     # mastodon_url = "https://mastodon.social"
     # matrix_url = "https://matrix.org"
     telegram_url = "https://telegram.org"
     tryhackme_url = "https://tryhackme.com"
-    twitter_url = "https://twitter.com"
+    twitter_url = "https://x/blockphy"
     # xmpp_url = "https://xmpp.org"
     # youtube_url = "https://youtube.com"
 
