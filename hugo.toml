@@ -1,4 +1,4 @@
-baseURL = "https://abhinabphy.github.io/"
+baseURL = "https://abhinabphy.me"
 languageCode = "en-us"
 theme = "poison"
 canonifyURLs = true
@@ -43,8 +43,8 @@ home = ["HTML", "RSS"]
     linkedin_url = "https://linkedin.com/in/abhinabdasiitg"
     # mastodon_url = "https://mastodon.social"
     # matrix_url = "https://matrix.org"
-    telegram_url = "https://telegram.org"
-    tryhackme_url = "https://tryhackme.com"
+    telegram_url = "https://t.me/abhinabphy"
+    # tryhackme_url = "https://tryhackme.com"
     twitter_url = "https://x/blockphy"
     # xmpp_url = "https://xmpp.org"
     # youtube_url = "https://youtube.com"
