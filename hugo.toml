@@ -16,7 +16,8 @@ home = ["HTML", "RSS"]
 
 [params]
     brand = "Abhinab Das"                      # name of your site - appears in the sidebar
-    remote_brand_image = "https://i.postimg.cc/3xhTcx4K/Screenshot-2025-07-14-at-1-00-21-PM.jpg"  # path to the image shown in the sidebar
+    brand_image = "/images/test.jpeg"
+    remote_brand_image = "" # path to the image shown in the sidebar
     description = "Web3 Security Researcher |  3x Hackathon Winner | Studying at IIT Guwahati | Passionate about DeFi, audits & protocol exploits" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
